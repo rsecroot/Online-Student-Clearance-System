@@ -3,7 +3,7 @@
 **Product Information:**
 
 - Vendor Homepage: (https://phpgurukul.com/student-record-system-php/)
-- Affected Version: [<= v1.0]
+- Affected Version: [<= V 3.20]
 - BUG Author: Ravi Sharma
 
 **Vulnerability Details**
@@ -85,6 +85,7 @@ An attacker can:
 $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
 $stmt->execute([$username, $password]);
 $user = $stmt->fetch();
+
 
 **References**
 
